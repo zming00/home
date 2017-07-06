@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<!--文档的各种属性和信息-->
+<head>
+
+   <title>赵明的首页(*/v\*)</title>   <!--网页的标题信息-->
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link href="style.css" rel="stylesheet" type="text/css"/>
+   <script type="text/javascript" src="upload.js"></script>
+ <!--  <script type="text/javascript"> 
+        var Sys = {}; 
+        var ua = navigator.userAgent.toLowerCase(); 
+        if (window.ActiveXObject) 
+            Sys.ie = ua.match(/msie ([\d.]+)/)[1] 
+        else if (document.getBoxObjectFor) 
+            Sys.firefox = ua.match(/firefox\/([\d.]+)/)[1] 
+        else if (window.MessageEvent && !document.getBoxObjectFor) 
+            Sys.chrome = ua.match(/chrome\/([\d.]+)/)[1] 
+        else if (window.opera) 
+            Sys.opera = ua.match(/opera.([\d.]+)/)[1] 
+        else if (window.openDatabase) 
+            Sys.safari = ua.match(/version\/([\d.]+)/)[1]; 
+         
+        //以下进行测试 
+        if(Sys.ie) document.write('IE: '+Sys.ie); 
+        if(Sys.firefox) document.write('Firefox: '+Sys.firefox); 
+        if(Sys.chrome) document.write('Chrome: '+Sys.chrome); 
+        if(Sys.opera) document.write('Opera: '+Sys.opera); 
+        if(Sys.safari) document.write('Safari: '+Sys.safari); 
+ 
+    </script> -->
+  
+</head>
+
+<body onbeforeunload="return checkLeave()">
+
+  <div class="div1">
+    <a href="C:\Users\zming\Desktop\web实验\myweb\index\index.html">BACK</a>
+  </div>
+
+  <div class="basic-grey">
+  <form name="form" id="form" method="get" action="upsave.jsp" method="post" onSubmit="return beforeSubmit(this)">
+    <h1>Contact Form
+    <span>Please fill all the texts in the fields.</span>
+    </h1>
+    <label>
+     <span>用户名: </span>
+     <input id="name" type="text" name="name" placeholder="Your Name" />
+    </label>
+    <label>
+     <span>联系电话 :</span>
+     <input id="tel" type="tel" name="tel" placeholder="Your Tel" />
+    </label>
+    <label>
+     <span>联系邮箱 :</span>
+     <input id="email" type="email" name="email" placeholder="Your Email Address" />
+    </label>
+    <label>
+     <span>具体留言 : </span>
+     <textarea id="message" name="message" placeholder="Your Message to Me^-^"></textarea>
+    </label>
+    <label>
+     <span>性别 :</span><select name="selection">
+     <option value="Job Inquiry">GIRL ♀</option>
+     <option value="General Question">BOY ♂</option>
+     </select>
+    </label>
+    <label>
+      <span>&nbsp;</span>
+      <input type="submit" class="button" value="提交" onclick="test()"/>
+      <input type="reset" class="button" value="重置" />
+    </label>
+  </form>
+  </div>
+<!--onclick="abc(this.form)"-->
+</body>
+
+</html>
